@@ -1,0 +1,113 @@
+<!--By KotoMurzik-->
+<!--My vk="https://vk.com/kotomurzik"-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <!-- Materialize -->
+  <link rel="stylesheet" href="./css/materialize.min.css">
+
+  <!-- Theme's Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Theme JS -->
+  <script src="./js/particles.js"></script>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  
+  <!-- Title -->
+  <title>KotoMurzik</title>
+  
+  <!-- Icon -->
+  <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+
+  <!-- Meta Info -->
+  <meta charset="UTF-8">
+  <meta name="author" content="KotoMurzik">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- script -->
+  <script src="./js/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      let numberOfImages=5;
+      let random = Math.round(Math.random()*(numberOfImages-1))+1;
+      let imgPath=('./img/background' + random + '.jpg');
+      let nav_bar = '#29265a';
+      if (random === 2) nav_bar = '#193e7c';
+      else if (random === 3) nav_bar = '#011C39';
+      else if (random === 4) nav_bar = '#793077';
+      else if (random === 5) nav_bar = '#B59C88';
+
+      $('body').css('background-image', ('url("' + imgPath + '")'));
+      $('#nav-box').css('background', (nav_bar));
+    });
+  </script>
+<!-- / script -->
+</head>
+
+<body style="background-image: url(&quot;./img/background2.jpg&quot;);">
+  <!-- Nav -->
+  <div id="nav-box" style="background: rgb(25, 62, 124); --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor:#28487d;" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor="">
+    <div class="navbar-fixed">
+      <nav class="z-depth-0">
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="#">
+              <span data-balloon="Имя в Discord - KotoMurzik#2106" data-balloon-pos="down" style="z-index: 2;">
+                <i class="fab fa-discord"></i>
+              </span>
+            </a>
+            </li>
+			      <li>
+              <a href="https://www.youtube.com/channel/UCyWcy8o_dDs49K1qgTS_goA?view_as=subscriber">
+                <span data-balloon="Мой канал YouTube" data-balloon-pos="down" style="z-index: 2;">
+                  <i class="fab fa-youtube"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://vk.com/kotomurzik">
+                <span data-balloon="Я в ВКонтакте" data-balloon-pos="down" style="z-index: 2;">
+                  <i class="fab fa-vk"></i>
+                </span>
+              </a>
+            </li>
+            <li><a href="https://vk.com/nova_land">
+              <span data-balloon="Мой сервер (просто так)" data-balloon-pos="down" style="z-index: 2;">
+                <i class="fa-solid fa-code"></i>
+              </span>
+            </a>
+          </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- / Nav -->
+
+  <!-- Nick -->
+  <div class="nick">
+      <span data-balloon="Мой никнейм" data-balloon-pos="up">KotoMurzik</span>
+  </div>
+  <!-- / Nick -->
+
+  <!-- Particles -->
+<!-- count particles -->
+<div class="count-particles">
+  <span class="js-count-particles"></span>
+</div>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+
+  <!-- / Particles -->
+</body>
+</html>
